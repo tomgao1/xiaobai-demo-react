@@ -35,7 +35,8 @@ font-size:24px;
       <Wrapper>
         <ul>
           {categoryList.map(c=>
-            <li className={category === c ? 'selected' : ''}
+            <li key={c} 
+            className={category === c ? 'selected' : ''}
                  onClick={() =>{setCategory(c);}}
                  >{categoryMap[c]}
                  </li>  
