@@ -43,7 +43,7 @@ function Money() {
                              /> 
        <NumberPadSection value={selected.amount}
                         onChange={amount => onChange({amount}
-                          )}/>
+                      )}/>
 
 
 
