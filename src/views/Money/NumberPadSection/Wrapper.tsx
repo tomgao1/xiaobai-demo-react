@@ -40,7 +40,7 @@ const Wrapper = styled.section`
         background:#B8B8B8;
       }
       &:nth-child(12) {
-        background:#9A9A9A;
+        background:rgba(35,167,242);
       }
       &:nth-child(14) {
         background:#A9A9A9;
