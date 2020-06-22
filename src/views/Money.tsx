@@ -29,15 +29,12 @@ function Money() {
   };
   const submit = () => {
     addRecord(selected);
-    console.log('执行了');
     alert('保存成功');
-    console.log('执行了');
     setSelected(defaultFormData);
   };
   return (
     <MyLayout>
-      {JSON.stringify(selected)}
-      <hr/>
+    
       <TagsSection value={selected.tagIds}
         onChange={tagIds => onChange({tagIds})}/>
       <NoteSection value={selected.note}
