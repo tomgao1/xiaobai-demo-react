@@ -1,5 +1,4 @@
-
-import * as React from 'react';
+import  React from 'react';
 import { generateOutput } from "./NumberPadSection/generateOutput";
 import {Wrapper} from './NumberPadSection/Wrapper';
 
@@ -26,7 +25,7 @@ type Props = {
     const onClickButtonWrapper = (e: React.MouseEvent)=>{
       const text = (e.target as HTMLButtonElement).textContent;
       if(text ===null){return;}
-      if (text=== 'ok') {
+      if (text === 'OK') {
         if(props.onOk) {props.onOk();}
         return;
       }
