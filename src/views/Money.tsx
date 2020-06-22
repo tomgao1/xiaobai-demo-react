@@ -28,9 +28,11 @@ function Money() {
     setSelected({...selected, ...obj});
   };
   const submit = () => {
+    if(addRecord(selected)){
     addRecord(selected);
     alert('保存成功');
     setSelected(defaultFormData);
+    }
   };
   return (
     <MyLayout>
