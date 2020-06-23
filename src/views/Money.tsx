@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import {TagsSection} from './Money/TagsSection';
 import {CategorySection} from './Money/CategorySection';
@@ -26,7 +26,7 @@ background: rgba(35,167,242);
 
 function Money() {
   const [selected, setSelected] = useState(defaultFormData);
-  const {records, addRecord} = useRecords();
+  const {addRecord} = useRecords();
   const onChange = (obj: Partial<typeof selected>) => {
     setSelected({...selected, ...obj});
   };
