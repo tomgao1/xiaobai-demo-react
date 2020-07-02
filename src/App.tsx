@@ -9,6 +9,9 @@ import { Tag } from 'views/Tag';
 
 const AppWrapper = styled.div`
 color:#333;
+max-width:500px;
+margin:0 auto;
+background: #e9f1f6;
 `;
 
 

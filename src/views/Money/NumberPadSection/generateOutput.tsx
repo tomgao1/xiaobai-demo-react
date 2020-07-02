@@ -26,6 +26,7 @@ const generateOutput = (text: string, output = '0') => {
         }
       case '清空':
         return '';
+        
       default:
         return '';
     }

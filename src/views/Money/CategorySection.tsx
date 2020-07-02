@@ -10,17 +10,21 @@ font-size:24px;
   > li {
     width:50%;
     text-align: center;
+    background: white;
     padding:  16px 0;
     position: relative;
     &.selected::after{
       content: '';
       display: block;
       height: 3px;
-      background: #333;
+      background:#16B8FF;
+   
       position: absolute;
       width: 100%;
       left: 0;
       bottom:0;
+
+      
     }
   }
 }
